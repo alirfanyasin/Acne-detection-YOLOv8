@@ -66,15 +66,15 @@ pip install -r requirements.txt
 
 Buat database di phpMyAdmin atau sejenisnya
 ```bash
-    # config.py
-    def database_connection():
-    connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="db_acne_detection" # nama databasenya sesuaikan dengan yg di buat di phpMyAdmin
-    )
-    return connection
+# config.py
+def database_connection():
+connection = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="db_acne_detection" # nama databasenya sesuaikan dengan yg di buat di phpMyAdmin
+)
+return connection
 ```
 
 Akses url ini untuk generate tabel di dalam database tersebut
