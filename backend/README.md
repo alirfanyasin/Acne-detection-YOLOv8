@@ -64,6 +64,29 @@ Install Dependencies
 pip install -r requirements.txt
 ```
 
+Buat database di phpMyAdmin atau sejenisnya
+```bash
+    # config.py
+    def database_connection():
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="db_acne_detection" # nama databasenya sesuaikan dengan yg di buat di phpMyAdmin
+    )
+    return connection
+```
+
+Akses url ini untuk generate tabel di dalam database tersebut
+```bash
+http://127.0.0.1:5000/generate
+
+# atau
+
+http://localhost:5000/generate
+```
+
+
 Jalankan Server
 ```bash
 python app.py
