@@ -77,6 +77,13 @@ connection = mysql.connector.connect(
 return connection
 ```
 
+
+Jalankan Server
+```bash
+python app.py
+```
+
+
 Akses url ini untuk generate tabel di dalam database tersebut
 ```bash
 http://127.0.0.1:5000/generate
@@ -86,11 +93,6 @@ http://127.0.0.1:5000/generate
 http://localhost:5000/generate
 ```
 
-
-Jalankan Server
-```bash
-python app.py
-```
 
 Jika berhasil, server akan berjalan di: `http://localhost:5000` namun tidak perlu di buka di browser, hanya server dari frontend saja yang di buka di browser `http://localhost:5173`
 
